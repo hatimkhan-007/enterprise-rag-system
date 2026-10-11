@@ -8,3 +8,5 @@ langchain-text-splitters
 pypdf
 chromadb
 python-dotenv
+langchain-google-genai
+google-genai
