@@ -4,6 +4,10 @@ An AI-powered document question-answering application built with **Python, LangC
 
 The project demonstrates an end-to-end **Retrieval-Augmented Generation (RAG)** pipeline, combining document processing, vector embeddings, semantic retrieval, and Large Language Models (LLMs) in an interactive web application.
 
+<p align="center">
+  <img src="assets/enterprise-landingpage.jpg" alt="Enterprise AI Document Analysis System Landing Page" width="100%">
+</p>
+
 ## 🚀 Features
 
 * **PDF Document Ingestion:** Load and extract text from multi-page PDF documents using LangChain's `PyPDFLoader`.
