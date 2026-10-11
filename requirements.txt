@@ -1,12 +1,11 @@
 streamlit
+python-dotenv
 langchain
+langchain-classic
 langchain-community
 langchain-core
-langchain-openai
+langchain-ollama
 langchain-chroma
 langchain-text-splitters
-pypdf
 chromadb
-python-dotenv
-langchain-google-genai
-google-genai
+pypdf
