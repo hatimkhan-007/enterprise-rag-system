@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 
 load_dotenv()
@@ -31,7 +31,9 @@ def ingest_and_embed_pdf(pdf_path):
             "No extractable text was found in the PDF. Scanned PDFs may require OCR."
         )
 
-    embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="gemini-embedding-001"
+    )
 
     db = Chroma(
         persist_directory=CHROMA_DB_DIR,
