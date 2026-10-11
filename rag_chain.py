@@ -3,7 +3,6 @@ from langchain_classic.chains import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 
-
 def create_rag_system(retriever):
     llm = ChatOllama(
         model="llama3.2:3b",
